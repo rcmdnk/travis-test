@@ -8,11 +8,11 @@ python:
 
 script:
   - cat .travis.yml
-  - exit 3
+  - exit
   - python --version
 
 before_install:
-  - before_install
+  - echo before_install
 install:
   - echo install
 before_script:
