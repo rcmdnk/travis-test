@@ -1,4 +1,7 @@
 language: aaa
+os:
+  - linux
+  - osx
 script:
   - cat .travis.yml
 
