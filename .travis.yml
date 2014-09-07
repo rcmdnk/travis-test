@@ -1,4 +1,4 @@
-language: ovjective-c
+language: perl
 os:
   - linux
   - osx
