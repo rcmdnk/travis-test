@@ -8,7 +8,7 @@ python:
 
 script:
   - cat .travis.yml
-  - ech test
+  - exit
   - python --version
 
 before_install:
