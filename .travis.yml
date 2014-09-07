@@ -4,6 +4,7 @@ os:
   - osx
 script:
   - cat .travis.yml
+  - which brew
 
 install:
   - echo install
