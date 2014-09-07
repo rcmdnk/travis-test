@@ -1,25 +1,9 @@
 language: aaa
 script:
   - cat .travis.yml
-  - echo $OSTYPE
-  - echo test
-  - a="1"
-  - echo $a
-  - export a="2"
-  - echo $a
-  - ls -a
-  - touch a
-  - ls -a
 
-before_install:
-  - echo before_install
 install:
   - echo install
-before_script:
-  - echo before_script
-after_success:
-  - echo after_success
-after_failure:
-  - echo after_failure
-after_script:
-  - echo after_script
+  - echo OSTYPE=$OSTYPE
+  - echo TRAVIS_OS_NAME=$TRAVIS_OS_NAME
+  - echo OS=$OS
