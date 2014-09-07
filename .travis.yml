@@ -3,8 +3,8 @@ bash:
   - 3.0
   - 4.0
 env:
-  - a=1
-  - b=1
+  - a=1 b=1
+  - a=2 b=2
 script:
   - cat .travis.yml
   - echo a=$a b=$b
