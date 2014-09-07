@@ -1,14 +1,5 @@
 language: bash
-bash:
-  - 3.0
-  - 4.0
-env:
-  global:
-    - a=1
-    - b=1
-  matrix:
-    - c=1
-      d=1
 script:
   - cat .travis.yml
-  - echo a=$a b=$b c=$c d=$d
+  - echo test && echo test2
+  - [ 1 -eq 1 ] && [ 2 -eq 2 ]
