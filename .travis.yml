@@ -11,9 +11,9 @@ script:
   - python --version
 
 before_install:
-  - echo before_install
+  - before_install
 install:
-  - install
+  - echo install
 before_script:
   - echo before_script
 after_success:
