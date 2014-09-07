@@ -1,3 +1,4 @@
 language: bash
 script:
   - cat .travis.yml
+  - echo $TRAVIS_BRANCH
