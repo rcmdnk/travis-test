@@ -1,5 +1,3 @@
 language: bash
 script:
   - cat .travis.yml
-  - echo test && echo test2
-  - [ 1 -eq 1 ] && [ 2 -eq 2 ]
