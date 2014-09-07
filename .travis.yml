@@ -21,4 +21,4 @@ after_success:
 after_failure:
   - echo after_failure
 after_script:
-  - after_script
+  - echo after_script
