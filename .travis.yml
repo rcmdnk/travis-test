@@ -8,7 +8,7 @@ env:
     - b=1
   matrix:
     - c=1
-    - d=1
+      d=1
 script:
   - cat .travis.yml
   - echo a=$a b=$b c=$c d=$d
