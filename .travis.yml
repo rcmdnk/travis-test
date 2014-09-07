@@ -1,13 +1,10 @@
-language: perl
-os:
-  - linux
-  - osx
+language: bash
+bash:
+  - 3.0
+  - 4.0
+env:
+  - a=1
+  - b=1
 script:
   - cat .travis.yml
-  - which brew
-
-install:
-  - echo install
-  - echo OSTYPE=$OSTYPE
-  - echo TRAVIS_OS_NAME=$TRAVIS_OS_NAME
-  - echo OS=$OS
+  - echo a=$a b=$b
