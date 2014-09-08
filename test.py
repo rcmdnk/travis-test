@@ -6,7 +6,7 @@ def func1():
 def func2():
     print 2
 
-def func3(): # pragma: no cover
+def func3(): # no cover
     print 3
 
 if __name__ == "__main__":
