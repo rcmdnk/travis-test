@@ -1,6 +1,9 @@
-language: python
+env:
+  matrix:
+    - a=1
+    - a=2
+  matrix:
+    - b=1
+    - b=2
 script:
   - cat .travis.yml
-before_install: echo before_install
-before_script: echo before_script
-install: echo install
