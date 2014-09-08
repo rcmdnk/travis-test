@@ -1,15 +1,3 @@
 script:
   - cat .travis.yml
-  - [ 1 -eq 1 ] && echo $HOME
-before_install:
-  - [ 1 -eq 1 ] && echo $HOME
-install:
-  - [ 1 -eq 1 ] && echo $HOME
-before_script:
-  - [ 1 -eq 1 ] && echo $HOME
-after_script:
-  - [ 1 -eq 1 ] && echo $HOME
-after_success:
-  - [ 1 -eq 1 ] && echo $HOME
-after_failure:
-  - [ 1 -eq 1 ] && echo $HOME
+  - 'if [ $USER = travis ];then echo $USER;fi'
