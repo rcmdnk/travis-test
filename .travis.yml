@@ -1,9 +1,14 @@
-env:
-  matrix:
-    - a=1
-    - a=2
-  matrix:
-    - b=1
-    - b=2
 script:
-  - cat .travis.yml
+  - [ 1 -eq 1 ] && echo script
+before_install:
+  - [ 1 -eq 1 ] && echo before_install
+install:
+  - [ 1 -eq 1 ] && echo install
+before_script:
+  - [ 1 -eq 1 ] && echo bofore_script
+after_script:
+  - [ 1 -eq 1 ] && echo after_script
+after_success:
+  - [ 1 -eq 1 ] && echo after_success
+after_failure:
+  - [ 1 -eq 1 ] && echo after_failure
