@@ -1,4 +1,5 @@
 script:
+  - cat .travis.yml
   - "[ 1 -eq 1 ] && echo $HOME"
 before_install:
   - "[ 1 -eq 1 ] && echo $HOME"
