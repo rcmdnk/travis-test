@@ -1,9 +1,9 @@
+language: java
+install:
+  - '[ "${TRAVIS_OS_NAME}" = "osx" ] && brew update || true'
+  - '[ "${TRAVIS_OS_NAME}" = "osx" ] && brew install ant || true'
+script:
+  - echo test
 os:
   - linux
   - osx
-script:
-  - cat .travis.yml
-  - echo install
-  - echo OSTYPE=$OSTYPE
-  - echo TRAVIS_OS_NAME=$TRAVIS_OS_NAME
-  - echo OS=$OS
