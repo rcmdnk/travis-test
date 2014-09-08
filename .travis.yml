@@ -1,5 +1,5 @@
 script:
-  - [ 1 -eq 1 ] && echo script
+  - echo script
 before_install:
   - [ 1 -eq 1 ] && echo before_install
 install:
