@@ -1,4 +1,4 @@
-language: ruby
+language: aaa
 rvm:
   - 1.9.3
   - 2.1.0
