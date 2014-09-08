@@ -2,7 +2,7 @@ os:
   - linux
   - osx
 script:
-  - cat .travis. yml
+  - cat .travis.yml
   - echo install
   - echo OSTYPE=$OSTYPE
   - echo OS=$OS
