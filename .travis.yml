@@ -1,7 +1,9 @@
-language: python
-rvm:
-  - 1.9.3
-  - 2.1.0
+language: objective-c
+os:
+  - linux
+  - osx
 script:
-  - cat .travis.yml
-  - ruby --version
+  - cat .travis. yml
+  - echo install
+  - echo OSTYPE=$OSTYPE
+  - echo OS=$OS
