@@ -1,3 +1,4 @@
 script:
   - cat .travis.yml
-  - 'if [ $USER = travis ];then echo $USER;fi'
+  - 'if [ "$AAA" = "" ];then echo $AAA;else echo non;fi'
+  - "if [ \"$AAA\" = \"\" ];then echo $AAA;else echo non;fi"
