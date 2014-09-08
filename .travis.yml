@@ -2,7 +2,6 @@ language: python
 install:
   - pip install coveralls
 script:
-  - coverage run test.py 1
-  - coverage run test.py 2
+  - coverage run test.py
 after_success:
   - coveralls

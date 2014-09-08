@@ -8,8 +8,10 @@ def func2():
 
 if __name__ == "__main__":
     import sys
-    if len(sys.argv) > 1:
-        if sys.argv[1] == "1":
-            func1()
-        if sys.argv[1] == "2":
-            func2()
+    func1
+    func2
+    #if len(sys.argv) > 1:
+    #    if sys.argv[1] == "1":
+    #        func1()
+    #    if sys.argv[1] == "2":
+    #        func2()
