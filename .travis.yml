@@ -1,3 +1,5 @@
 language: python
 script:
   - cat .travis.yml
+before_install: echo before_install
+before_script: echo before_script
