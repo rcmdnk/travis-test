@@ -6,6 +6,9 @@ def func1():
 def func2():
     print 2
 
+def func3():
+    print 3
+
 if __name__ == "__main__":
     import sys
     #func1()
