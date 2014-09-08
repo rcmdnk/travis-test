@@ -1,14 +1,14 @@
 script:
-  - '[ 1 -eq 1 ] && echo script'
+  - '[ 1 -eq 1 ] && echo $HOME'
 before_install:
-  - '[ 1 -eq 1 ] && echo before_install'
+  - '[ 1 -eq 1 ] && echo $HOME'
 install:
-  - '[ 1 -eq 1 ] && echo install'
+  - '[ 1 -eq 1 ] && echo $HOME'
 before_script:
-  - '[ 1 -eq 1 ] && echo bofore_script'
+  - '[ 1 -eq 1 ] && echo $HOME'
 after_script:
-  - '[ 1 -eq 1 ] && echo after_script'
+  - '[ 1 -eq 1 ] && echo $HOME'
 after_success:
-  - '[ 1 -eq 1 ] && echo after_success'
+  - '[ 1 -eq 1 ] && echo $HOME'
 after_failure:
-  - '[ 1 -eq 1 ] && echo after_failure'
+  - '[ 1 -eq 1 ] && echo $HOME'
