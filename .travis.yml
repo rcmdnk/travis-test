@@ -1,4 +1,3 @@
+language: python
 script:
   - cat .travis.yml
-  - echo test && echo test
-  - ech test || echo test
