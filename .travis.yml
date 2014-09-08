@@ -1,4 +1,8 @@
+language: python
+install:
+  - pip install coveralls
 script:
-  - cat .travis.yml
-  - 'if [ "$AAA" = "" ];then echo $AAA;else echo non;fi'
-  - "if [ \"$AAA\" = \"\" ];then echo $AAA;else echo non;fi"
+  - coverage run test.py 1
+  - coverage run test.py 2
+after_success:
+  - coveralls
