@@ -18,3 +18,4 @@ if __name__ == "__main__":
             func1()
         if sys.argv[1] == "2":
             func2()
+
