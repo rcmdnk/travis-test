@@ -19,3 +19,4 @@ if __name__ == "__main__":
         if sys.argv[1] == "2":
             func2()
 
+    print 1 if 1 == 1 else 2
