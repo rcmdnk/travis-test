@@ -1,16 +1,9 @@
-#language: python
-#install:
-#  - pip install coveralls
-#script:
-#  - coverage run --parallel-mode test.py 1
-#  - coverage run --parallel-mode test.py 2
-#after_success:
-#  - coverage combine
-#  - coveralls
 language: python
 install:
   - pip install coveralls
 script:
-  - coverage run test.py 1
+  - coverage run --parallel-mode test.py 1
+  - coverage run --parallel-mode test.py 2
 after_success:
+  - coverage combine
   - coveralls
