@@ -2,8 +2,8 @@ language: python
 install:
   - pip install coveralls
 script:
-  - coverage run --parallel-mode test.py 1
-  - coverage run --parallel-mode test.py 2
+  - coverage run --source=a.py,lib,test.py --parallel-mode test.py 1
+  - coverage run --source=a.py,lib,test.py --parallel-mode test.py 2
 after_success:
   - coverage combine
   - coveralls
