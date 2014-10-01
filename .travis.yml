@@ -1,9 +1,6 @@
-language: python
-install:
-  - pip install coveralls
+language: bash
 script:
-  - coverage run --source=a.py,lib,test.py --parallel-mode test.py 1
-  - coverage run --source=a.py,lib,test.py --parallel-mode test.py 2
-after_success:
-  - coverage combine
-  - coveralls
+  - touch testfile
+  - git commit -m "test commit"
+  - git push
+  - git push -f https://c27a5bd6c09cb9b51790f08adffe9c963542088c@github.com/rcmdnk/travis-test master
