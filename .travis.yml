@@ -8,12 +8,12 @@ env:
     - secure: "hNyHrO5q7mCUt4FcFjXgUZEzhOTTZe2I+7fflyCEq5DUeIbCKq+2KLJNFzSE17c62HFvxjJ7UTCc0KApGDYFbxmKa6JNYs9qDnOQKeMy1yUTxmoQzFt3lCvMxntaRLO/gC18j9ib0Kwp0u9eOLhvLCLWjUKOnttY/kj0RHVhDmw="
 
 script:
-  - git config --global push.default simple
-  - git branch
-  - git checkout master
-  - git branch
-  - touch testfile
-  - echo "test" >> testfile
-  - git add testfile
-  - git commit -m "test commit"
-  - git push --quiet -f https://${GH_TOKEN}@github.com/rcmdnk/travis-test master
+  #- git config --global push.default simple
+  #- git branch
+  #- git checkout master
+  #- git branch
+  #- touch testfile
+  #- echo "test" >> testfile
+  #- git add testfile
+  #- git commit -m "test commit"
+  #- git push --quiet -f https://${GH_TOKEN}@github.com/rcmdnk/travis-test master
