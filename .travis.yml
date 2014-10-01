@@ -1,10 +1,11 @@
 language: bash
 env:
-  - GIT_COMMITTER_NAME=rcmdnk
-  - GIT_COMMITTER_EMAIL=rcmdnk@gmail.com
-  - GIT_AUTHOR_NAME=rcmdnk
-  - GIT_AUTHOR_EMAIL=rcmdnk@gmail.com
-  - secure: "T/lUrPAises815kNLuj7pdVAWpCioLS8e0XKqOqCX6RbAl5oalp+WH9EZM8gIDVSvZGFrrpLeFTX+uNsjEoDMolzLPsfozg8i7Ihd738gO+M0av5KeKc+y6tou3jcZz0drFZDSLCN8v+LHltwY8JCDYeMBj4D5boTNJ+mu16uaw="
+  global:
+    - GIT_COMMITTER_NAME=rcmdnk
+    - GIT_COMMITTER_EMAIL=rcmdnk@gmail.com
+    - GIT_AUTHOR_NAME=rcmdnk
+    - GIT_AUTHOR_EMAIL=rcmdnk@gmail.com
+    - secure: "T/lUrPAises815kNLuj7pdVAWpCioLS8e0XKqOqCX6RbAl5oalp+WH9EZM8gIDVSvZGFrrpLeFTX+uNsjEoDMolzLPsfozg8i7Ihd738gO+M0av5KeKc+y6tou3jcZz0drFZDSLCN8v+LHltwY8JCDYeMBj4D5boTNJ+mu16uaw="
 
 script:
   - touch testfile
