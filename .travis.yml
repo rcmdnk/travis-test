@@ -13,8 +13,6 @@ script:
   - git checkout master
   - git branch
   - touch testfile
-  - git add -A
-  - git commit -m "test commit"
   - echo "test" > testfile
   - git add testfile
   - git commit -m "test commit"
