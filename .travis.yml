@@ -18,4 +18,3 @@ script:
   - git add -A
   - git commit -m "test commit"
   - git push --quiet -f https://${GH_TOKEN}@github.com/rcmdnk/travis-test test
-
