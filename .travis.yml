@@ -13,7 +13,7 @@ script:
   - git checkout master
   - git branch
   - touch testfile
-  - echo "test" > testfile
+  - echo "test" >> testfile
   - git add testfile
   - git commit -m "test commit"
   - git push --quiet -f https://${GH_TOKEN}@github.com/rcmdnk/travis-test master
