@@ -5,15 +5,19 @@ env:
     - GIT_COMMITTER_EMAIL=rcmdnk@gmail.com
     - GIT_AUTHOR_NAME=rcmdnk
     - GIT_AUTHOR_EMAIL=rcmdnk@gmail.com
-    - git config --global push.default simple
     - secure: "XwsUOzO33XMOLrPpEVwUZG5vuIZMud+W5DkFk9oq6SY+AOGVrLrW8niRbqmLWUbJ6VTSKjnP2GuxhVaamP0IlzLBiXDeG496KbsPTaRu/A6G65sk849la0vz0AvrQ36qqrsI4SsHcXkSFDpZMkBCuf3HG8qqRZflAloRHuPlAF8="
 
 script:
+  - git config --global push.default simple
   - git branch
   - git checkout master
   - git branch
   - touch testfile
   - git add -A
+  - git ls
+  - git commit -m "test commit"
+  - echo "test" > testfile
+  - git add testfile
   - git commit -m "test commit"
   - git push
   - git push -f https://${GH_TOKEN}@github.com/rcmdnk/travis-test master
