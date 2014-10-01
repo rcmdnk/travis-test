@@ -1,4 +1,8 @@
 language: bash
+before_script:
+  - git config --global user.email "rcmdnk@gmail.com"
+  - git config --global user.name "rcmdnk"
+  - git config --global push.default simple
 script:
   - touch testfile
   - git commit -m "test commit"
