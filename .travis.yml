@@ -1,20 +1,6 @@
-language: bash
-env:
-  global:
-    - GIT_COMMITTER_NAME=rcmdnk
-    - GIT_COMMITTER_EMAIL=rcmdnk@gmail.com
-    - GIT_AUTHOR_NAME=rcmdnk
-    - GIT_AUTHOR_EMAIL=rcmdnk@gmail.com
-    - secure: "hNyHrO5q7mCUt4FcFjXgUZEzhOTTZe2I+7fflyCEq5DUeIbCKq+2KLJNFzSE17c62HFvxjJ7UTCc0KApGDYFbxmKa6JNYs9qDnOQKeMy1yUTxmoQzFt3lCvMxntaRLO/gC18j9ib0Kwp0u9eOLhvLCLWjUKOnttY/kj0RHVhDmw="
-
+language: objective-c
+before_install:
+- openssl aes-256-cbc -K $encrypted_a28e27acd1e7_key -iv $encrypted_a28e27acd1e7_iv
+  -in id_rsa.enc -out id_rsa -d
 script:
-  - git config --global push.default simple
-  - git branch
-  - git checkout -b test
-  - git branch
-  - touch testfile
-  - echo "test" >> testfile
-  - rm -f .travis.yml
-  - git add -A
-  - git commit -m "test commit"
-  - git push --quiet -f https://${GH_TOKEN}@github.com/rcmdnk/travis-test test
+  - echo test
