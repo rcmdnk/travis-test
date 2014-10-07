@@ -27,4 +27,4 @@ script:
   - ls ~/.ssh/
   - cp id_rsa ~/.ssh/
   - chmod 600 ~/.ssh/id_rsa
-  - git push git@github.com:rcmdnk/travis-test test
+  - git push -f git@github.com:rcmdnk/travis-test test
