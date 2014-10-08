@@ -12,6 +12,7 @@ before_install:
   #- openssl aes-256-cbc -K $encrypted_ee14946e6582_key -iv $encrypted_ee14946e6582_iv -in .travis_rsa.enc -out .travis_rsa -d
   #- openssl aes-256-cbc -K $encrypted_a28e27acd1e7_key -iv $encrypted_a28e27acd1e7_iv -in id_rsa.enc -out id_rsa -d
   - openssl aes-256-cbc -K $encrypted_a28e27acd1e7_key -iv $encrypted_a28e27acd1e7_iv -in .travis_rsa.enc -out .travis_rsa -d
+  - openssl aes-256-cbc -K $encrypted_b46fb5af9050_key -iv $encrypted_b46fb5af9050_iv -in id_rsa.enc -out id_rsa -d
 script:
   - echo test
   - git config --global push.default simple
