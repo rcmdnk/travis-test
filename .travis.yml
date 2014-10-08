@@ -9,6 +9,7 @@ env:
 before_install:
   - openssl aes-256-cbc -K $encrypted_a28e27acd1e7_key -iv $encrypted_a28e27acd1e7_iv -in id_rsa.enc -out id_rsa -d
     #- openssl aes-256-cbc -K $encrypted_a28e27acd1e7_key -iv $encrypted_a28e27acd1e7_iv -in id_rsa_test.enc -out id_rsa_test -d
+  - openssl aes-256-cbc -K $encrypted_a28e27acd1e7_key -iv $encrypted_a28e27acd1e7_iv -in id_rsa_2.enc -out id_rsa_2 -d
 script:
   - echo test
   - git config --global push.default simple
@@ -36,8 +37,10 @@ script:
   - git add -A
   - git commit -m "test commit2"
   - git push -f git@github.com:rcmdnk/octogray_test test
+  - cp id_rsa_2 ~/.ssh/id_rsa
+  - chmod 600 ~/.ssh/id_rsa
   - echo "test2" >> testfile
   - echo "test" >> testfile2
   - git add -A
-  - git commit -m "test commit2"
-  - git push -f git@github.com:rcmdnk/travis-test test
+  - git commit -m "test commit3"
+  - git push -f git@github.com:rcmdnk/octogray_test test
