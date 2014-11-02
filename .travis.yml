@@ -9,4 +9,5 @@ script:
   - echo test >& log
   - which sh
   - ls -l /bin/sh
+  - sh --version
   - sh -c "echo test >& log"
