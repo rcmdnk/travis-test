@@ -1,7 +1,9 @@
-language: bash
+language: objective-c
 script:
   - echo test
   - echo $SHELL
   - bash --version
   - which csh
+  - echo test >& log
+  - brew install csh
   - echo test >& log
