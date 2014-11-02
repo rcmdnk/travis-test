@@ -7,3 +7,6 @@ script:
   - echo test >& log
   - brew install csh
   - echo test >& log
+  - which sh
+  - ls -l /bin/sh
+  - sh -c "echo test >& log"
