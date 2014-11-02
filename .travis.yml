@@ -12,3 +12,4 @@ script:
   - sh --version
   - sh -c "echo test >& log"
   - ./a.rb
+  - rake test
