@@ -3,3 +3,5 @@ script:
   - echo test
   - echo $SHELL
   - bash --version
+  - which csh
+  - echo test >& log
