@@ -11,3 +11,4 @@ script:
   - ls -l /bin/sh
   - sh --version
   - sh -c "echo test >& log"
+  - ./a.rb
