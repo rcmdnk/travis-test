@@ -1,13 +1,3 @@
 language: bash
 script:
   - echo test
-  - echo $SHELL
-  - bash --version
-  - which csh
-  - echo test >& log
-  - which sh
-  - ls -l /bin/sh
-  - sh --version
-  - sh -c "echo test >& log"
-  - ./a.rb
-  - rake test
