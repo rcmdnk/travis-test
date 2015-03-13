@@ -1,3 +1,6 @@
 language: bash
+branches:
+  except:
+    - /^v[0-9]/
 script:
   - echo test
