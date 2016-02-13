@@ -3,6 +3,8 @@ os:
     - linux
     - osx
 script:
-  - sw_vers
   - uname -a
-  - system_profiler SPSoftwareDataType
+  - if [ "$TRAVIS_OS_NAME" == "osx" ]; then sw_vers; fi
+  - if [ "$TRAVIS_OS_NAME" == "osx" ]; then system_profiler SPSoftwareDataType; fi
+  - if [ "$TRAVIS_OS_NAME" == "linux" ]; then cat /etc/issue; fi
+  - if [ "$TRAVIS_OS_NAME" == "linux" ]; then cat /etc/lsb-release; fi
