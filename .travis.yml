@@ -1,6 +1,4 @@
-language:
-  - objective-c
-  - general
+language: c
 os:
   - linux
   - osx
