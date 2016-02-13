@@ -1,4 +1,4 @@
-language: ovjective-c
+language: c
 os:
   - linux
   - osx
