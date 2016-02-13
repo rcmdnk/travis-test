@@ -4,3 +4,5 @@ os:
     - osx
 script:
   - sw_vers
+  - uname -a
+  - system_profiler SPSoftwareDataType
