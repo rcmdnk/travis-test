@@ -1,7 +1,9 @@
-language: objective-c
+language:
+  - objective-c
+  - general
 os:
-    - linux
-    - osx
+  - linux
+  - osx
 script:
   - echo $TRAVIS_OS_NAME
   - uname -a
