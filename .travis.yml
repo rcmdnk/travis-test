@@ -3,6 +3,7 @@ os:
     - linux
     - osx
 script:
+  - echo $TRAVIS_OS_NAME
   - uname -a
   - if [ "$TRAVIS_OS_NAME" == "osx" ]; then sw_vers; fi
   - if [ "$TRAVIS_OS_NAME" == "osx" ]; then system_profiler SPSoftwareDataType; fi
