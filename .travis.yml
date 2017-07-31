@@ -15,3 +15,6 @@ script:
   - if [ "$TRAVIS_OS_NAME" == "osx" ]; then system_profiler SPSoftwareDataType; fi
   - if [ "$TRAVIS_OS_NAME" == "linux" ]; then cat /etc/issue; fi
   - if [ "$TRAVIS_OS_NAME" == "linux" ]; then cat /etc/lsb-release; fi
+  - touch aaa
+  - git add -A
+  - git commit -a -m "test"
