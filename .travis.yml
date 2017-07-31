@@ -18,3 +18,5 @@ script:
   - touch aaa
   - git add -A
   - git commit -a -m "test"
+  - ./a.sh
+
