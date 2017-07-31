@@ -1,7 +1,14 @@
 os:
   - linux
   - osx
+env:
+  global:
+    - GIT_COMMITTER_NAME=rcmdnk
+    - GIT_COMMITTER_EMAIL=rcmdnk@gmail.com
+    - GIT_AUTHOR_NAME=rcmdnk
+    - GIT_AUTHOR_EMAIL=rcmdnk@gmail.com
 script:
+  - echo $GIT_COMMITTER_NAME
   - echo $TRAVIS_OS_NAME
   - uname -a
   - if [ "$TRAVIS_OS_NAME" == "osx" ]; then sw_vers; fi
