@@ -1,22 +1,4 @@
 os:
   - linux
-  - osx
-env:
-  global:
-    - GIT_COMMITTER_NAME=rcmdnk
-    - GIT_COMMITTER_EMAIL=rcmdnk@gmail.com
-    - GIT_AUTHOR_NAME=rcmdnk
-    - GIT_AUTHOR_EMAIL=rcmdnk@gmail.com
 script:
-  - echo $GIT_COMMITTER_NAME
-  - echo $TRAVIS_OS_NAME
-  - uname -a
-  - if [ "$TRAVIS_OS_NAME" == "osx" ]; then sw_vers; fi
-  - if [ "$TRAVIS_OS_NAME" == "osx" ]; then system_profiler SPSoftwareDataType; fi
-  - if [ "$TRAVIS_OS_NAME" == "linux" ]; then cat /etc/issue; fi
-  - if [ "$TRAVIS_OS_NAME" == "linux" ]; then cat /etc/lsb-release; fi
-  - touch aaa
-  - git add -A
-  - git commit -a -m "test"
-  - ./a.sh
-
+  - echo hoge
